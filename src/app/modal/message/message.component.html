@@ -1,0 +1,8 @@
+<div class="backdrop" (click)="closeModal()"></div>
+<div  class="modal-box"
+      [@openCloseMessage]="isShowMessage ? 'open' : 'closed'">
+  <p>{{ message }}</p>
+  <div class="modal-box-action">
+    <button class="modal-btn-close" (click)="closeModal()">Close</button>
+  </div>
+</div>

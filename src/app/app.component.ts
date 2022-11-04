@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-animations';
+  public message = 'ng-animations message';
+  isShowMessage: boolean;
+
+  openModalMessage(){
+    this.isShowMessage = true;
+  }
+  closeModalMessage(){
+    this.isShowMessage = false;
+  }
 }
